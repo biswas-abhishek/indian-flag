@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+.container {
+  width: 600px;
+  margin: auto;
+  margin-top: 2%;
+  height: 90vh;
+  border-left: 15px solid #966f33;
+}
+.container .top-layer,
+.container .medium-layer,
+.container .last-layer {
+  width: 100%;
+  height: 20%;
+  background: #ff9933;
+}
+.container .medium-layer {
+  background: #ffffff;
+}
+.container .medium-layer .chakra {
+  width: 133px;
+  margin: auto;
+  height: 133px;
+  border-radius: 50%;
+  position: relative;
+  border: 4px solid #000080;
+  animation: chakra_rotate 4s linear 0s infinite normal forwards;
+}
+@keyframes chakra_rotate {
+  to {
+    transform: rotate(360deg);
+  }
+  from {
+    transform: rotate(0deg);
+  }
+}
+.container .medium-layer .chakra li {
+  width: 129px;
+  margin: auto;
+  margin-top: 60px;
+  height: 0px;
+  position: absolute;
+  border: 2px solid #000080;
+}
+.container .medium-layer .chakra li:nth-child(1) {
+  transform: rotate(15deg);
+}
+.container .medium-layer .chakra li:nth-child(1) {
+  transform: rotate(15deg);
+}
+.container .medium-layer .chakra li:nth-child(2) {
+  transform: rotate(30deg);
+}
+.container .medium-layer .chakra li:nth-child(3) {
+  transform: rotate(45deg);
+}
+.container .medium-layer .chakra li:nth-child(4) {
+  transform: rotate(60deg);
+}
+.container .medium-layer .chakra li:nth-child(5) {
+  transform: rotate(75deg);
+}
+.container .medium-layer .chakra li:nth-child(6) {
+  transform: rotate(90deg);
+}
+.container .medium-layer .chakra li:nth-child(7) {
+  transform: rotate(105deg);
+}
+.container .medium-layer .chakra li:nth-child(8) {
+  transform: rotate(120deg);
+}
+.container .medium-layer .chakra li:nth-child(9) {
+  transform: rotate(135deg);
+}
+.container .medium-layer .chakra li:nth-child(10) {
+  transform: rotate(150deg);
+}
+.container .medium-layer .chakra li:nth-child(11) {
+  transform: rotate(165deg);
+}
+.container .last-layer {
+  background: #138808;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    width: 400px;
+  }
+  .container .top-layer,
+  .container .medium-layer,
+  .container .last-layer {
+    height: 15%;
+  }
+  .container .medium-layer .chakra {
+    width: 103px;
+    height: 103px;
+  }
+  .container .medium-layer .chakra li {
+    width: 98px;
+    margin-top: 45px;
+  }
+}
